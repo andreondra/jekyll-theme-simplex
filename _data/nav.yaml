@@ -1,0 +1,35 @@
+- title: Programming
+  url: categories/programming.html
+  icon: wrench.svg
+  hue: "var(--c-themeHueRed)"
+  subnav:
+      - title: GOOOOOOOOOOOOOO
+        url: ondra.html
+        hue: "var(--c-themeHueRed)"
+        subnav:
+        - title: Ondra
+          url: ondra.html
+          hue: "var(--c-themeHueRed)"
+          subnav:
+          - title: Ondra
+            url: ondra.html
+            hue: "var(--c-themeHueRed)"
+      - title: Ondra
+        url: ondra.html
+      - title: Ondra
+        url: ondra.html
+      - title: Ondra
+        url: ondra.html
+
+- title: Programming
+  url: about.html
+  icon: wrench.svg
+- title: About
+  url: about.html
+  icon: wrench.svg
+- title: About
+  url: about.html
+  icon: wrench.svg
+  subnav:
+      - title: Ondra
+        url: ondra.html

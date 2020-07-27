@@ -1,0 +1,49 @@
+// =============================
+// index.scss
+// =============================
+// Used for page footer.
+
+.footer{
+
+    @include flexbox;
+    padding: 1rem 0 0 0;
+
+    &__about{
+
+        @include flexbox;
+
+        &__copyright{
+            margin: 0;
+        }
+
+        .divider{
+            margin: 0 1rem;
+
+            @include for-size('tablet'){
+                display: none;
+            }
+        }
+
+        &__theme{
+            @include flexbox;
+        }
+
+        #simplex-logo{
+            
+            img{
+                vertical-align: middle;
+                height: 1.25rem;
+                margin: 0 .5rem;
+                transition: $t-smooth;
+
+                &:hover{
+                    transform: scale(1.05) rotate(-5deg);
+                }
+            }
+        }
+
+        @include for-size('tablet'){
+            flex-direction: column;
+        }
+    }
+}

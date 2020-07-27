@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="{{ site.url }}/assets/fonts/fonts.css"/>
+<link rel="stylesheet" href="{{ site.url }}/assets/style.css"/>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+    {% if page.title != nil %}
+        {{page.title}}
+    {% else %}
+        {{site.title}}
+    {% endif %}
+</title>

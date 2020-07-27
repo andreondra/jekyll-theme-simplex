@@ -1,0 +1,35 @@
+module Jekyll
+    class SnippetGenerator < Generator
+      safe true
+  
+      def generate(site)
+
+        dir = "snippets"
+        site.collections.each do |keyCol, valueCol|
+          valueCol.each do |keyVal, valueVal|
+            if keyCol == "category"
+              site.pages << CategoryPage.new(site, site.source, dir, valueCol)
+              if valueCol.lazy == true
+                
+              end
+            end 
+          end
+        end
+      end
+    end
+  
+    # A Page subclass used in the `CategoryPageGenerator`
+    class CategoryPage < Page
+      def initialize(site, base, dir, category)
+        /
+        @site = site
+        @base = base
+        @dir  = dir
+        @name = "test.html"
+  
+        self.process(@name)
+        self.read_yaml(File.join(base, '_layouts'), 'category_index.html')
+        /
+      end
+    end
+  end

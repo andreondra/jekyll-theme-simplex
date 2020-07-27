@@ -1,0 +1,22 @@
+title: the Simplex theme
+description: description
+global_tags: jekyll theme simplex golasblog responsive html5
+
+copyright: © Golasowski 2020
+
+sass:
+    style: compressed
+
+collections:
+    category:
+        output: true
+    authors:
+        output: false
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"

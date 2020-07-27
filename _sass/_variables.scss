@@ -1,0 +1,81 @@
+// =============================
+// variables.scss
+// =============================
+// Contains all the useful variables for colors, sizes...
+
+// THEME COLORS
+:root{
+
+    --c-themePrimaryLight: #EFEFEF;
+    --c-themePrimaryDark:  #101010;
+    --c-themeSecondaryLight: #DADADA;
+    --c-themeSecondaryDark: #252525;
+    --c-themeTerniaryLight: #AEAEAE;
+    --c-themeTerniaryDark: #515151;
+    --c-themeQuaternaryLight: #919191;
+    --c-themeQuaternaryDark: #888888;
+
+    --c-themeHueRed: #C02717;
+    --c-themeHueGreen: #8EA604;
+    --c-themeHueBlue: #2E86AB;
+    --c-themeHueOrange: #E59500;
+    --c-themeHuePurple: #9F00CE;
+    --c-themeHueBrown: #230007;
+}
+
+// ELEMENT COLORS
+:root{
+
+    @media (prefers-color-scheme: light){
+
+        --c-articleHeading: var(--c-themePrimaryDark);
+        --c-articleParagraph: var(--c-themeSecondaryDark);
+        --c-articleBackground: var(--c-themePrimaryLight);
+
+        --c-pageBackground: var(--c-themePrimaryLight);
+
+        --c-menuLinks: var(--c-themePrimaryDark);
+        --c-menuDepth0: var(--c-themeSecondaryLight);
+
+        --c-snippetBackgroundExternal: rgba(239, 239, 239, 0.425);
+        --c-snippetBackgroundInternal: var(--c-pageBackground);
+
+        --c-snippetDate: var(--c-themeTerniaryLight);
+
+        --c-link: var(--c-themeTerniaryDark);
+        --c-linkVisited: var(--c-themeQuaternaryDark);
+        --c-linkHover: var(--c-themePrimaryDark);
+        --c-linkActive: var(--c-themePrimaryDark);
+    }
+
+    @media (prefers-color-scheme: dark){
+
+        --c-articleHeading: var(--c-themePrimaryLight);
+        --c-articleParagraph: var(--c-themeSecondaryLight);
+        --c-articleBackground: var(--c-themePrimaryDark);
+
+        --c-pageBackground: var(--c-themePrimaryDark);
+    }
+    
+}
+
+// SIZES
+:root{
+    
+    --s-p: 1rem;
+}
+
+// FONTS
+:root{
+
+    --f-header: Roboto;
+    --f-text: Roboto Slab;
+}
+
+// FIXED SIZES
+$s-menuItemWidth: 8rem;
+$s-menuItemPadding: 1rem;
+$s-m-menuMaxHeight: 1000px;
+
+// TRANSITIONS
+$t-smooth: ease .5s;

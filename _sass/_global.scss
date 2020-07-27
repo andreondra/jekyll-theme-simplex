@@ -1,0 +1,62 @@
+// =============================
+// global.scss
+// =============================
+// Used for global styles.
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+html{
+
+    font-family: var(--f-text);
+
+    // Root font size. Other sizes are derived from this accroding to variable values.
+    font-size: 16px;
+
+    @include for-size('tablet'){
+        font-size: 18px;
+    }
+}
+
+body{
+    background: var(--c-pageBackground);
+    
+    margin: 0;
+    min-height: 100vh;
+    
+    display: grid;
+    gap: 0 100px;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+}
+
+h1,h2,h3,h4,h5,h5,h6{
+
+    font-family: var(--f-header);
+}
+
+p{
+    font-size: var(--s-p);
+}
+
+a{
+    
+    &:link{
+        color: var(--c-link);
+    }
+
+    &:visited{
+        color: var(--c-linkVisited);
+    }
+
+    &:hover{
+        color: var(--c-linkHover);
+    }
+
+    &:active{
+        color: var(--c-linkActive);
+    }
+}
