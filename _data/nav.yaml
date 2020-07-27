@@ -1,5 +1,5 @@
 - title: Programming
-  url: categories/programming.html
+  url: category/programming.html
   icon: wrench.svg
   hue: "var(--c-themeHueRed)"
   subnav:

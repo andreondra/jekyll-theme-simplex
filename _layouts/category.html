@@ -11,24 +11,15 @@ layout: default
             <p>{{ page.description }}</p>
         {% endif %}
     </section>
-    
-    {% if page.lazy != true %}    
-        {% for post in site.posts %}
-        <section class="snippet">
-                {% for category in post.category %}
-                    {% if page.category contains category %}
-                        {% include snippet.html post=post %}
-                        {% break %}
-                    {% endif %}
-                {% endfor %}
-        </section>
-        {% endfor %}
-    {% else %}
-        {% for post in site.posts %}
-            <section class="snippet-link">
-                {% assign url = post.path |  split: "." | first | split: "/" | last %}
-                {{ site.url }}/assets/snippets/{{ url }}.html
-            </section>
-        {% endfor %}
-    {% endif %}
+     
+    {% for post in site.posts %}
+    <section class="snippet">
+            {% for category in post.category %}
+                {% if page.category contains category %}
+                    {% include snippet.html post=post %}
+                    {% break %}
+                {% endif %}
+            {% endfor %}
+    </section>
+    {% endfor %}
 </section>
