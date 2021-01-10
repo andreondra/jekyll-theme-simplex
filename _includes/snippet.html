@@ -1,5 +1,5 @@
 <style>
-    .snippet::after {
+    .snippet_{{ post.id | slugify: "ascii" }}::after {
 
         background-image: 
         radial-gradient(ellipse closest-side, var(--c-snippetBackgroundExternal), var(--c-snippetBackgroundInternal)),

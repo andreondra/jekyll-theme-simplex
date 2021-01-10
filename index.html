@@ -9,6 +9,8 @@ layout: default
     </section>
     
     {% for post in site.posts %}
-        {% include snippet.html post=post %}
+        <section class="snippet snippet_{{ post.id | slugify: "ascii" }}">
+            {% include snippet.html post=post %}
+        </section>
     {% endfor %}
 </section>
