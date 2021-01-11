@@ -1,6 +1,11 @@
 <header class="header">
     <section class="logo">
-        <h1>golasblog</h1>
+        {% if site.logo_img != nil %}
+            <h1 style="display: none;">golasblog</h1>
+            <img class="logo__img" src={{site.logo_img}}/>
+        {% else %}
+            <h1>golasblog</h1>
+        {% endif %}
     </section>
     <button id="menuToggle">
         <div></div>

@@ -1,7 +1,7 @@
 title: the Simplex theme
+logo_img: /assets/img/icons/golasblog_logo.svg
 description: description
 global_tags: jekyll theme simplex golasblog responsive html5
-
 copyright: © Golasowski 2020
 
 sass:

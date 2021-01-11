@@ -29,10 +29,110 @@ Or install it yourself as:
 
 ## ✔ Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+### ⚙ Setting up the template
+Please replace the contents of the _config.yml file with the following:
+```yaml
+title: the Simplex theme #The name of your blog.
+logo_img: /assets/img/icons/golasblog_logo.svg #Absolute path to the logo. If not specified, the title will be displayed instead.
+description: description #Description.
+global_tags: jekyll theme simplex golasblog responsive html5 #Tags.
+copyright: © Golasowski 2020 #Your copyright.
+
+collections:
+    category:
+        output: true
+    authors:
+        output: false
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
+```
+
+### ✨ Defining categories
+Create a `_category` folder in the root directory of the blog. Create a `.md` file for every category with the contents:
+```
+---
+category: [design] #Category ID.
+hue: var(--c-themeHueOrange) #Category hue. See note [1].
+title: Design #Category title.
+description: Lorem ipsum dolor sit amet.
+---
+```
+
+### 🤵 Defining authors
+Create a `_authors` folder in the root directory. Create a `.md` file for every author with the contents:
+```
+---
+nick: golas #Author's nick.
+full_name: Andrew Golasowski #Author's full name.
+photo_dir: assets/img/authors/golas.png #Path to the author's pic.
+---
+```
+
+### 📰 Defining the menu
+Create a `_data` folder in the root directory. In the folder, create a `nav.yaml` file. Here's an example:
+```yaml
+- title: Programming #Menu item title.
+  url: category/programming.html #Menu item url.
+  icon: assets/img/icons/wrench.svg #Menu item icon.
+  hue: "var(--c-themeHueRed)" #Menu item hue - see note [1].
+  subnav: #Subnav. See note [2].
+      - title: GOOOOOOOOOOOOOO #Submenu item title.
+        url: ondra.html #Submenu item url.
+        hue: "var(--c-themeHueRed)" #Submenu item hue.
+        subnav: #Another subnav
+            - title: Ondra
+              url: ondra.html
+              hue: "var(--c-themeHueRed)"
+- title: Programming
+  url: about.html
+  icon: assets/img/icons/wrench.svg
+```
+
+### ✒ Creating posts
+Posts are created in the `_posts` directory. Following front matter attributes are supported:
+```
+---
+layout: post #Do not change.
+category: [programming, testing] #One, more categories or no at all.
+title: "Lorem ipsum" #Article title.
+author: andy #Author's nick.
+---
+Your markdown content here.
+```
+
+### ℹ Notes
+[1] Hue can be either one of the predefined colors or any of the CSS `color` attribute supported values (hex, rgb...).
+[2] Submenus are generated recursively, so any menu (and submenu) can have its own submenu.
+
+#### Predefined colors
+You can use following predefined colors:
+```scss
+--c-themePrimaryLight: #EFEFEF;
+--c-themePrimaryDark:  #101010;
+--c-themeSecondaryLight: #DADADA;
+--c-themeSecondaryDark: #252525;
+--c-themeTerniaryLight: #AEAEAE;
+--c-themeTerniaryDark: #515151;
+--c-themeQuaternaryLight: #919191;
+--c-themeQuaternaryDark: #888888;
+
+--c-themeHueRed: #C02717;
+--c-themeHueGreen: #8EA604;
+--c-themeHueBlue: #2E86AB;
+--c-themeHueOrange: #E59500;
+--c-themeHuePurple: #9F00CE;
+--c-themeHueBrown: #230007;
+```
+This colors are CSS variables, usage: `var(--var-name)`
 
 ## 🤝 Contributing
-
+ 
 Bug reports and pull requests are welcome on [GitHub](https://github.com/andreondra/jekyll-theme-simplex).
 
 ## ⚙ Development

@@ -8,11 +8,7 @@
 
             <div class="item-controls">
                 <a href="{{ site.url }}/{{ item.url }}">
-                    {% for img in site.static_files %}
-                        {% if img.name == item.icon and img.path contains "img/icons" %}
-                            <img src="{{ site.url }}/{{ img.path }}"/>
-                        {% endif %}
-                    {% endfor %}
+                    <img src="{{ site.url }}/{{ item.icon }}"/>
                 {% if item.hue != nil %}
                     <p style="color: {{ item.hue }}">{{ item.title }}</p>
                 {% else %}

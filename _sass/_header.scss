@@ -9,6 +9,18 @@
         flex-direction: column;
     };
 
+    padding-top: 2rem;
+
+    .logo{
+
+        h1{
+            margin: 0;
+        }
+        &__img{
+            height: 2rem;
+        }
+    }
+
     #menuToggle{
         display: none;
         border: none;
@@ -53,6 +65,7 @@
 
         max-width: 100vw;
         width: 100%;
+        margin-top: 2rem;
     
         .list{
 

@@ -71,6 +71,13 @@
                 &__category{
                     text-transform: uppercase;
                     margin: 0;
+                    @include flexbox;
+
+                    &__title{
+                        color: white;
+                        background: var(--c-themePrimaryDark);
+                        padding: .2rem .5rem;
+                    }
                 }
 
                 &__date{
