@@ -8,7 +8,9 @@
 
             <div class="item-controls">
                 <a href="{{ site.url }}/{{ item.url }}">
+                {% if item.icon != nil %}
                     <img src="{{ site.url }}/{{ item.icon }}"/>
+                {% endif %}
                 {% if item.hue != nil %}
                     <p style="color: {{ item.hue }}">{{ item.title }}</p>
                 {% else %}

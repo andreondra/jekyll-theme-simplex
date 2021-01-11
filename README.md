@@ -31,7 +31,7 @@ Or install it yourself as:
 ## ✔ Usage
 
 ### ⚙ Setting up the template
-Please replace the contents of the _config.yml file with the following:
+Replace the contents of the _config.yml file with the following:
 ```yaml
 title: the Simplex theme #The name of your blog.
 logo_img: /assets/img/icons/golasblog_logo.svg #Absolute path to the logo. If not specified, the title will be displayed instead.
@@ -95,6 +95,8 @@ Create a `_data` folder in the root directory. In the folder, create a `nav.yaml
   icon: assets/img/icons/design.svg
   hue: "var(--c-themeHueRed)"
 ```
+#### Pro tip:
+Use color icons with the same hue as the menu items. Icons will be black and on hover the color will be shown.
 
 ### ✒ Creating posts
 Posts are created in the `_posts` directory. Following front matter attributes are supported:
