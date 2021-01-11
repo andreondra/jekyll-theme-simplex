@@ -80,19 +80,20 @@ Create a `_data` folder in the root directory. In the folder, create a `nav.yaml
 ```yaml
 - title: Programming #Menu item title.
   url: category/programming.html #Menu item url.
-  icon: assets/img/icons/wrench.svg #Menu item icon.
+  icon: assets/img/icons/programming.svg #Menu item icon.
   hue: "var(--c-themeHueRed)" #Menu item hue - see note [1].
   subnav: #Subnav. See note [2].
-      - title: GOOOOOOOOOOOOOO #Submenu item title.
-        url: ondra.html #Submenu item url.
-        hue: "var(--c-themeHueRed)" #Submenu item hue.
+      - title: C++ #Submenu item title.
+        url: cpp.html #Submenu item url.
+        hue: "var(--c-themeHueOrange)" #Submenu item hue.
         subnav: #Another subnav
-            - title: Ondra
-              url: ondra.html
-              hue: "var(--c-themeHueRed)"
-- title: Programming
-  url: about.html
-  icon: assets/img/icons/wrench.svg
+            - title: Libraries
+              url: libs.html
+              hue: "var(--c-themeHueBlue)"
+- title: Design
+  url: design.html
+  icon: assets/img/icons/design.svg
+  hue: "var(--c-themeHueRed)"
 ```
 
 ### ✒ Creating posts
@@ -109,6 +110,7 @@ Your markdown content here.
 
 ### ℹ Notes
 [1] Hue can be either one of the predefined colors or any of the CSS `color` attribute supported values (hex, rgb...).
+
 [2] Submenus are generated recursively, so any menu (and submenu) can have its own submenu.
 
 #### Predefined colors
@@ -146,6 +148,5 @@ When your theme is released, only the files in `_layouts`, `_includes`, `_sass` 
 To add a custom directory to your theme-gem, please edit the regexp in `jekyll-theme-simplex.gemspec` accordingly.
 
 ## ⚖ License
-
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+© Ondrej Golasowski. The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
