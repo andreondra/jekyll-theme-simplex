@@ -134,7 +134,7 @@ You can use following predefined colors:
 --c-themeHuePurple: #9F00CE;
 --c-themeHueBrown: #230007;
 ```
-This colors are CSS variables, usage: `var(--var-name)`
+These colors are CSS variables, usage: `var(--var-name)`
 
 ## 🤝 Contributing
  
