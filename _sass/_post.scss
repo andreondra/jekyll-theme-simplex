@@ -8,4 +8,85 @@
     justify-self: center;
     padding: 0 1rem;
     max-width: 1000px;
+    @include flexbox{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__title{
+
+        &__text{
+            margin-bottom: 0;
+        }
+    }
+
+    &__meta{
+
+        @include flexbox;
+        width: 100%;
+
+        &__divider{
+            margin: 0 1rem;
+
+            @include for-size('tablet'){
+                display: none;
+            }
+        }
+
+        &__category{
+            text-transform: uppercase;
+            margin: 0;
+            @include flexbox;
+
+            &__title{
+                color: white;
+                background: var(--c-themePrimaryDark);
+                padding: .2rem .5rem;
+            }
+
+            @include for-size('tablet'){
+
+                display: none;
+                margin-top: 1rem;
+                p{
+                    margin: 0;
+                    width: 100%;
+                    text-align: center;
+                }
+                flex-direction: column;
+            }
+        }
+
+        &__date{
+
+            @include for-size('tablet'){
+                margin-top: 1rem;
+            }
+        }
+
+        &__author{
+
+            width: fit-content;
+            //box-shadow: inset 0px 0px 14px -4px rgba(0,0,0,0.5);
+            @include flexbox;
+    
+            &__photo{
+                margin: 0 1rem;
+                width: 2rem;
+                border-radius: 100%;
+            }
+        }
+
+        @include for-size('tablet'){
+            flex-direction: column;
+        }
+    }
+
+    &__content{
+
+        h1{
+            font-size: 1.8rem;
+        }
+    }
 }

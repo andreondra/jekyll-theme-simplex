@@ -13,11 +13,21 @@
 
     .logo{
 
-        h1{
-            margin: 0;
-        }
-        &__img{
-            height: 2rem;
+        &__link{
+
+            text-decoration: none;
+            color: var(--c-themePrimaryDark);
+            transition: $t-smooth;
+            
+            &:hover{
+                letter-spacing: .5rem;
+            }
+            h1{
+                margin: 0;
+            }
+            &__img{
+                height: 2rem;
+            }
         }
     }
 

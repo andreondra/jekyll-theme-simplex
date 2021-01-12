@@ -3,5 +3,34 @@ layout: default
 ---
 
 <section class="post">
-    {{ content }}
+
+    <div class="post__title">
+        <h1 class="post__title__text">{{ page.title }}</h1>
+    </div>
+    <div class="post__meta"> 
+        <div class="post__meta__category">
+            {% for category in page.category %}
+                <p class="post__meta__category__title" style="background: {{ site.category | where: "category", category | map: "hue"}}">{{ category }}</p>
+            {% else %}
+                <p class="post__meta__category__title">No category</p>
+            {% endfor %}
+        </div>
+        <p class="post__meta__divider">·</p>
+        <div class="post__meta__date">
+            {{ page.date | date: '%B %d, %Y' }}
+        </div>
+        {% if page.author != nil %}
+            {% assign author = site.authors | where: "nick", page.author | first %}
+            <p class="post__meta__divider">·</p>
+            <div class="post__meta__author">
+                <p>by </p>
+                <img class="post__meta__author__photo" src="{{ site.url }}/{{ author.photo_dir }}"/>
+                <p>{{ author.full_name }}</p>
+            </div>
+        {% endif %}
+    </div>
+
+    <div class="post__content">
+        {{ content }}
+    </div>
 </section>
