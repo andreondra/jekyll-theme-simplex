@@ -6,6 +6,9 @@
 
 A *simple* yet neat blogging theme. Developed for the [golas blog](https://golas.blog/) project.
 
+## 👓 Preview
+![Preview](preview.gif)
+
 ## ℹ Installation
 
 Add this line to your Jekyll site's `Gemfile`:

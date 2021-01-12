@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="100"
+   height="100"
+   id="svg7"
+   sodipodi:docname="cpp.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <defs
+     id="defs11" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2089"
+     inkscape:window-height="1187"
+     id="namedview9"
+     showgrid="false"
+     inkscape:zoom="5.04"
+     inkscape:cx="56.240358"
+     inkscape:cy="56.589041"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg7" />
+  <metadata
+     id="metadata2">
+    <rdf:RDF>
+      <rdf:Description
+         rdf:about="https://commons.wikimedia.org/wiki/File:C_plus_plus.svg">
+        <dc:title>C plus plus</dc:title>
+        <dc:description>Logo of C++ (programming language)</dc:description>
+        <dc:creator>JTojnar</dc:creator>
+        <dc:license>Public Domain</dc:license>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </rdf:Description>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="g844"
+     style="fill:#c02717;fill-opacity:1">
+    <path
+       id="big-C"
+       d="M 54.341278,23.416146 L 54.341278,32.368497 C 51.4832,29.706659 48.429036,27.71725 45.178782,26.400263 C 41.956453,25.083386 38.524021,24.42492 34.881478,24.424862 C 27.708364,24.42492 22.216474,26.624477 18.405794,31.023543 C 14.595077,35.394688 12.689727,41.727171 12.68974,50.021015 C 12.689727,58.286899 14.595077,64.619382 18.405794,69.018487 C 22.216474,73.389594 27.708364,75.575141 34.881478,75.575137 C 38.524021,75.575141 41.956453,74.916676 45.178782,73.599736 C 48.429036,72.282811 51.4832,70.293402 54.341278,67.631502 L 54.341278,76.499792 C 51.371119,78.517225 48.218887,80.030298 44.884573,81.039015 C 41.578185,82.047725 38.075704,82.552085 34.37712,82.552085 C 24.878359,82.552085 17.397061,79.65203 11.933205,73.851913 C 6.4693217,68.023794 3.7373877,60.08017 3.7373917,50.021015 C 3.7373877,39.933903 6.4693217,31.990276 11.933205,26.190115 C 17.397061,20.362043 24.878359,17.447977 34.37712,17.447915 C 38.131745,17.447977 41.662244,17.952335 44.968631,18.960988 C 48.302948,19.941746 51.427159,21.426796 54.341278,23.416146"
+       style="fill:#c02717;stroke:none;fill-opacity:1" />
+    <text
+       id="first-plus"
+       y="62.539062"
+       x="25.666044"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#c02717;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans">+</text>
+    <text
+       id="second-plus"
+       y="62.539062"
+       x="57.233311"
+       style="font-size:40px;font-style:normal;font-weight:normal;fill:#c02717;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans">+</text>
+  </g>
+</svg>
