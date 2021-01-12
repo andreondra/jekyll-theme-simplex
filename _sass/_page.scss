@@ -1,0 +1,16 @@
+// =============================
+// global.scss
+// =============================
+// Used for single page styles.
+
+.page{
+
+    justify-self: center;
+    padding: 0 1rem;
+    max-width: 1000px;
+    @include flexbox{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}

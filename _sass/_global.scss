@@ -27,6 +27,7 @@ body{
     
     display: grid;
     gap: 0 100px;
+    align-items: start;
     grid-template-areas: 
         "header"
         "main"
