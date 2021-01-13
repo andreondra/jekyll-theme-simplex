@@ -20,6 +20,8 @@
             flex-direction: column;
         };
 
+        color: var(--c-feed-title);
+
         text-align: center;
         padding: 0 2rem;
         min-width: 80%;
@@ -42,12 +44,12 @@
             height: 100%;
             margin: 1rem 0;
             padding: 1rem 2rem;
-            box-shadow: inset 0px 0px 14px -4px rgba(0, 0, 0, 0);
+            box-shadow: inset 0px 0px 14px -4px var(--c-snippetShadow);
             transition: $t-smooth;
 
             &:hover{
                 transform: scale(.99);
-                box-shadow: inset 0px 0px 14px -4px rgba(0,0,0,0.5);
+                box-shadow: inset 0px 0px 14px -4px var(--c-snippetShadowHover);
             }
         }
 
@@ -96,6 +98,7 @@
             
             &__header{
                 margin: 1rem 0 0 0;
+                color: var(--c-articleHeading);
 
                 @include for-size('tablet'){
                     margin: 1rem 0 0 0;
@@ -105,12 +108,14 @@
 
             &__text{
 
+                color: var(--c-snippetHeading);
                 margin: 1rem 0 0 0;
             }
 
             &__author{
 
                 margin: 1.5rem 0 0 0;
+                color: var(--c-snippetAuthor);
 
                 @include flexbox{
                     flex-direction: row;

@@ -40,7 +40,14 @@
         --c-snippetBackgroundExternal: rgba(239, 239, 239, 0.425);
         --c-snippetBackgroundInternal: var(--c-pageBackground);
 
+        --c-snippetHeading: var(--c-themePrimaryDark);
         --c-snippetDate: var(--c-themeSecondaryDark);
+        --c-snippetAuthor: var(--c-themePrimaryDark);
+
+        --c-snippetShadowHover: rgba(0,0,0,0.5);
+        --c-snippetShadow:  rgba(0, 0, 0, 0);
+
+        --c-feed-title: var(--c-themePrimaryDark);
 
         --c-link: var(--c-themeTerniaryDark);
         --c-linkVisited: var(--c-themeQuaternaryDark);
@@ -50,9 +57,21 @@
 
     @media (prefers-color-scheme: dark){
 
+        --c-menuLinks: var(--c-themePrimaryLight);
+        --c-menuDepth0: var(--c-themeSecondaryLight);
+
         --c-articleHeading: var(--c-themePrimaryLight);
         --c-articleParagraph: var(--c-themeSecondaryLight);
         --c-articleBackground: var(--c-themePrimaryDark);
+
+        --c-snippetHeading: var(--c-themePrimaryLight);
+        --c-snippetDate: var(--c-themeSecondaryLight);
+        --c-snippetAuthor: var(--c-themePrimaryLight);
+
+        --c-snippetShadowHover: rgba(255, 255, 255, 0.5);
+        --c-snippetShadow:  rgba(0, 0, 0, 0);
+
+        --c-feed-title: var(--c-themePrimaryLight);
 
         --c-pageBackground: var(--c-themePrimaryDark);
     }
