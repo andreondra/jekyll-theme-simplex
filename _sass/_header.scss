@@ -26,6 +26,7 @@
                 margin: 0;
             }
             &__img{
+                filter: var(--c-headerImageFilter);
                 height: 2rem;
             }
         }
@@ -37,7 +38,7 @@
         outline: none;
         cursor: pointer;
         
-        margin: 2rem 0;
+        margin: 2rem 0 1rem 0;
         padding: 0;
         font-size: 1rem;
         width: 3em;
@@ -103,7 +104,7 @@
 
                     img,p{
                         transition: $t-smooth;
-                        filter: brightness(0);
+                        filter: var(--c-menuItemsFilter);
                     }
     
                     img{
@@ -144,7 +145,7 @@
                     max-height: 0;
                     width: 250px;
                     overflow: hidden;
-                    box-shadow: inset 0px 0px 14px -4px rgba(0,0,0,0.5);
+                    box-shadow: inset 0px 0px 14px -4px var(--c-menuShadow);
                     transition: $t-smooth;
                     flex-direction: column;
 
@@ -169,7 +170,7 @@
       
                     img{
                         transform: scale(1.1);
-                        filter: none;
+                        filter: var(--c-menuItemsFilterHover);
 
                         @include for-size('tablet'){
                             transform: scale(1);
@@ -178,7 +179,7 @@
 
                     p{
                         letter-spacing: .1rem;
-                        filter: none;
+                        filter: var(--c-menuItemsFilterHover);
 
                         @include for-size('tablet'){
                             letter-spacing: .2rem;
@@ -273,11 +274,12 @@
         }
 
         @include for-size('tablet'){
-            box-shadow: inset 0px 0px 14px -4px rgba(0,0,0,0.5);
+            box-shadow: inset 0px 0px 14px -4px var(--c-menuShadow);
 
             transition: $t-smooth;
             max-height: 0;
             overflow: hidden;
+            margin: 0;
             &.open{
                 max-height: $s-m-menuMaxHeight;
             }

@@ -28,24 +28,32 @@
 
     @media (prefers-color-scheme: light){
 
+
         --c-articleHeading: var(--c-themePrimaryDark);
         --c-articleParagraph: var(--c-themeSecondaryDark);
         --c-articleBackground: var(--c-themePrimaryLight);
 
         --c-pageBackground: var(--c-themePrimaryLight);
 
+        --c-headerImageFilter: none;
         --c-menuLinks: var(--c-themePrimaryDark);
         --c-menuDepth0: var(--c-themeSecondaryLight);
+        --c-menuItemsFilter: brightness(0);
+        --c-menuItemsFilterHover: none;
+        --c-menuShadow: rgba(0,0,0,0.5);
 
         --c-snippetBackgroundExternal: rgba(239, 239, 239, 0.425);
         --c-snippetBackgroundInternal: var(--c-pageBackground);
-
         --c-snippetHeading: var(--c-themePrimaryDark);
         --c-snippetDate: var(--c-themeSecondaryDark);
         --c-snippetAuthor: var(--c-themePrimaryDark);
-
         --c-snippetShadowHover: rgba(0,0,0,0.5);
         --c-snippetShadow:  rgba(0, 0, 0, 0);
+
+        --c-postTitle: var(--c-themePrimaryDark);
+        --c-postText: var(--c-themePrimaryDark);
+        --c-pageTitle: var(--c-themePrimaryDark);
+        --c-pageText: var(--c-themePrimaryDark);
 
         --c-feed-title: var(--c-themePrimaryDark);
 
@@ -53,12 +61,19 @@
         --c-linkVisited: var(--c-themeQuaternaryDark);
         --c-linkHover: var(--c-themePrimaryDark);
         --c-linkActive: var(--c-themePrimaryDark);
+
+        --c-footerText: var(--c-themePrimaryDark);
+        --c-footerImageFilter: none;
     }
 
     @media (prefers-color-scheme: dark){
 
+        --c-headerImageFilter: invert(1);
         --c-menuLinks: var(--c-themePrimaryLight);
         --c-menuDepth0: var(--c-themeSecondaryLight);
+        --c-menuItemsFilter: none;
+        --c-menuItemsFilterHover: brightness(100); 
+        --c-menuShadow: rgba(255, 255, 255, 0.2);
 
         --c-articleHeading: var(--c-themePrimaryLight);
         --c-articleParagraph: var(--c-themeSecondaryLight);
@@ -71,9 +86,17 @@
         --c-snippetShadowHover: rgba(255, 255, 255, 0.5);
         --c-snippetShadow:  rgba(0, 0, 0, 0);
 
+        --c-postTitle: var(--c-themePrimaryLight);
+        --c-postText: var(--c-themePrimaryLight);
+        --c-pageTitle: var(--c-themePrimaryLight);
+        --c-pageText: var(--c-themePrimaryLight);
+
         --c-feed-title: var(--c-themePrimaryLight);
 
         --c-pageBackground: var(--c-themePrimaryDark);
+
+        --c-footerText: var(--c-themePrimaryLight);
+        --c-footerImageFilter: invert(1);
     }
     
 }

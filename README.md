@@ -9,6 +9,13 @@ A *simple* yet neat blogging theme. Developed for the [golas blog](https://golas
 ## 👓 Preview
 ![Preview](preview.gif)
 
+## 💎 Features
+### Responsive
+![Responsivity preview](previewResponsive.gif)
+
+### Dark mode
+![Dark mode preview](previewDark.gif)
+
 ## ℹ Installation
 
 Add this line to your Jekyll site's `Gemfile`:

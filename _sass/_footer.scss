@@ -8,6 +8,7 @@
     @include flexbox;
     padding: 1rem 0 0 0;
     margin-top: auto;
+    color: var(--c-footerText);
 
     &__about{
 
@@ -36,6 +37,7 @@
                 height: 1.25rem;
                 margin: 0 .5rem;
                 transition: $t-smooth;
+                filter: var(--c-footerImageFilter);
 
                 &:hover{
                     transform: scale(1.05) rotate(-5deg);

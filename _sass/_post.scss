@@ -17,6 +17,7 @@
     &__title{
 
         &__text{
+            color: var(--c-postTitle);
             margin-bottom: 0;
         }
     }
@@ -27,6 +28,7 @@
         width: 100%;
 
         &__divider{
+            color: var(--c-postText);
             margin: 0 1rem;
 
             @include for-size('tablet'){
@@ -60,6 +62,7 @@
 
         &__date{
 
+            color: var(--c-postText);
             @include for-size('tablet'){
                 margin-top: 1rem;
             }
@@ -67,6 +70,7 @@
 
         &__author{
 
+            color: var(--c-postText);
             width: fit-content;
             //box-shadow: inset 0px 0px 14px -4px rgba(0,0,0,0.5);
             @include flexbox;
@@ -85,6 +89,7 @@
 
     &__content{
 
+        color: var(--c-postText);
         h1{
             font-size: 1.8rem;
         }

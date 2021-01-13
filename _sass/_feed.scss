@@ -24,10 +24,15 @@
 
         text-align: center;
         padding: 0 2rem;
+        margin-bottom: 2rem;
         min-width: 80%;
 
         h1{
             margin: 1rem 0 0 0;
+
+            @include for-size('tablet'){
+                margin: 0;
+            }
         }
     }
 
@@ -79,6 +84,17 @@
                         color: white;
                         background: var(--c-themePrimaryDark);
                         padding: .2rem .5rem;
+                    }
+
+                    
+                    @include for-size('tablet'){
+                        flex-direction: column;
+
+                        p{
+                            text-align: center;
+                            width: 100%;
+                            margin: 0;
+                        }
                     }
                 }
 
