@@ -64,7 +64,7 @@
 
             color: var(--c-postText);
             @include for-size('tablet'){
-                margin-top: 1rem;
+                margin-top: .5rem;
             }
         }
 
@@ -72,7 +72,6 @@
 
             color: var(--c-postText);
             width: fit-content;
-            //box-shadow: inset 0px 0px 14px -4px rgba(0,0,0,0.5);
             @include flexbox;
     
             &__photo{
@@ -92,6 +91,30 @@
         color: var(--c-postText);
         h1{
             font-size: 1.8rem;
+        }
+    }
+
+    &__navigator{
+
+        margin-top: 1rem;
+        width: 100%;
+
+        &__buttons{
+
+            @include flexbox{
+                justify-content: space-between;
+            };
+
+            a{
+                transition: $t-smooth;
+                box-shadow: inset 0px 0px 14px -8px rgba(0,0,0,0.5);
+                padding: .5rem;
+                text-decoration: none;
+
+                &:hover{
+                    box-shadow: inset 0px 0px 14px -8px rgba(0,0,0,0);
+                }
+            }
         }
     }
 }

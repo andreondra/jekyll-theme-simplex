@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section class="post">
+<article class="post">
 
     <div class="post__title">
         <h1 class="post__title__text">{{ page.title }}</h1>
@@ -30,7 +30,16 @@ layout: default
         {% endif %}
     </div>
 
+    {% if page.prevPart != nil || page.nextPart != nil %}
+        <div class="post__navigator">
+            <div class="post__navigator__buttons">
+                <a href>&lt; Previous</a>
+                <a href>Next &gt;</a>
+            </div>
+        </div>
+    {% endif %}
+
     <div class="post__content">
         {{ content }}
     </div>
-</section>
+</article>

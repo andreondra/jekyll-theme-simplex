@@ -66,12 +66,17 @@ a{
 
 .highlight{
 
+    margin: 2rem 0;
     transition: $t-smooth;
     box-shadow: inset 0px 0px 14px -4px var(--c-codeShadow);
 
     &:hover{
         box-shadow: inset 0px 0px 14px -4px var(--c-codeShadowHover);
     }
+
+    max-width: calc(100vw - 2rem);
+    overflow-x: auto;
+
     pre{
         margin: 0;
         padding: 1rem;
