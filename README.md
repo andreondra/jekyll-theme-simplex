@@ -120,6 +120,11 @@ author: andy #Author's nick.
 Your markdown content here.
 ```
 
+### Syntax highlighting
+The theme uses Pygments CSS files created by [@richleland](https://github.com/richleland). If you want to modify the highlighting styles, just download different CSS or create your own - see [Jekyll docs](https://jekyllrb.com/docs/liquid/tags/#stylesheets-for-syntax-highlighting).
+
+Note - `@media` is used to supply different styles for light and dark browser mode. See `_variables.scss` file for details.
+
 ### ℹ Notes
 [1] Hue can be either one of the predefined colors or any of the CSS `color` attribute supported values (hex, rgb...).
 
