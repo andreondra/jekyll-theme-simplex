@@ -42,8 +42,8 @@
             @include flexbox;
 
             &__title{
-                color: white;
-                background: var(--c-themePrimaryDark);
+                color: var(--c-noCategoryText);
+                background: var(--c-noCategoryBackground);
                 padding: .2rem .5rem;
             }
 
@@ -107,12 +107,26 @@
 
             a{
                 transition: $t-smooth;
-                box-shadow: inset 0px 0px 14px -8px rgba(0,0,0,0.5);
-                padding: .5rem;
                 text-decoration: none;
+                font-weight: bold;
+                font-size: 1.25rem;
+                color: var(--c-navigator);
+                filter: var(--c-navigatorFilter);
+
+                display: flex;
+                align-items: center;
 
                 &:hover{
-                    box-shadow: inset 0px 0px 14px -8px rgba(0,0,0,0);
+                    letter-spacing: .25rem;
+                }
+
+                .arrow-left{
+                    margin-right: .5rem;
+                    height: 1em;
+                }
+                .arrow-right{
+                    margin-left: .5rem;
+                    height: 1em;
                 }
             }
         }

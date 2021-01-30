@@ -81,8 +81,8 @@
                     @include flexbox;
 
                     &__title{
-                        color: white;
-                        background: var(--c-themePrimaryDark);
+                        color: var(--c-noCategoryText);
+                        background: var(--c-noCategoryBackground);                        
                         padding: .2rem .5rem;
                     }
 

@@ -66,6 +66,14 @@
     --c-codeShadow:  rgba(0, 0, 0, 0.5);
     --c-codeShadowHover:  rgba(0, 0, 0, 0.1);
 
+    --c-navigator: var(--c-themePrimaryDark);
+    --c-navigatorFilter: none;
+
+    --c-noCategoryBackground: var(--c-themePrimaryDark);
+    --c-noCategoryText: var(--c-themePrimaryLight);
+
+    --c-tableBorder: var(--c-themePrimaryDark);
+
     //Syntax highlighting.
     .highlight .hll { background-color: #ffffcc }
     .highlight .c { color: #8f5902; font-style: italic } /* Comment */
@@ -173,6 +181,14 @@
 
         --c-codeShadow:  rgba(0, 0, 0, 0);
         --c-codeShadowHover:  rgba(0, 0, 0, 0);
+
+        --c-navigator: var(--c-themePrimaryDark);
+        --c-navigatorFilter: invert(1);
+
+        --c-noCategoryBackground: var(--c-themePrimaryLight);
+        --c-noCategoryText: var(--c-themePrimaryDark);
+
+        --c-tableBorder: var(--c-themePrimaryLight);
 
         //Syntax highlighting.
         .highlight pre { background-color: #272822; }
