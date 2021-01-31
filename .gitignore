@@ -8,6 +8,7 @@ _posts
 _authors
 _category
 _data
+_plugins
 *.md
 assets/img/authors
 assets/posts
