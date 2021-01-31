@@ -178,6 +178,11 @@
 
         --c-pageBackground: var(--c-themePrimaryDark);
 
+        --c-link: var(--c-themeTerniaryLight);
+        --c-linkVisited: var(--c-themeQuaternaryLight);
+        --c-linkHover: var(--c-themePrimaryLight);
+        --c-linkActive: var(--c-themePrimaryLight);
+
         --c-footerText: var(--c-themePrimaryLight);
         --c-footerImageFilter: invert(1);
 
