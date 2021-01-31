@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-simplex"
-  spec.version       = "0.9.5"
+  spec.version       = "0.9.5.1"
   spec.authors       = ["Ondrej Golasowski"]
   spec.email         = ["golasowski.o@gmail.com"]
 
@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/andreondra/jekyll-theme-simplex"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
+  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README|_plugins)!i) }
 
   spec.add_runtime_dependency "jekyll", "~> 4.0"
 
