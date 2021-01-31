@@ -16,6 +16,12 @@ A *simple* yet neat blogging theme. Developed for the [golas blog](https://golas
 ### Dark mode
 ![Dark mode preview](previewDark.gif)
 
+### Buttons
+![Buttons preview](previewButtons.png)
+
+### Lity Lightbox 
+Supports images, videos, iFrames and more. See below for syntax.
+
 ## ℹ Installation
 
 Add this line to your Jekyll site's `Gemfile`:
@@ -120,10 +126,50 @@ author: andy #Author's nick.
 Your markdown content here.
 ```
 
-### Syntax highlighting
-The theme uses Pygments CSS files created by [@richleland](https://github.com/richleland). If you want to modify the highlighting styles, just download different CSS or create your own - see [Jekyll docs](https://jekyllrb.com/docs/liquid/tags/#stylesheets-for-syntax-highlighting).
+### ⚡ Syntax highlighting
+The theme uses Pygments CSS created by [@richleland](https://github.com/richleland). If you want to modify the highlighting styles, just download different CSS or create your own - see [Jekyll docs](https://jekyllrb.com/docs/liquid/tags/#stylesheets-for-syntax-highlighting).
 
-Note - `@media` is used to supply different styles for light and dark browser mode. See `_variables.scss` file for details.
+Note - `@media` is used to manage different styles for light and dark web browser mode. See `_variables.scss` file for details.
+
+### 📷 Inserting pictures
+Classic Markdown syntax is supported. However, to be able to use the lightbox feature, you have to use HTML syntax. Minimal example:
+```html
+<a href="/assets/example.jpg" data-lity>
+  <img src="/assets/example_thumbnail.jpg"/>
+</a>
+```
+
+To provide image description use this syntax:
+```html
+<div class="sx-picture">
+  <a href="/assets/example.jpg" data-lity>
+    <img src="/assets/example_thumbnail.jpg"/>
+  </a>
+  <span class="sx-subtitle">My picture description.</span>
+</div>
+```
+
+**Do not forget the `data-lity` attribute.**
+
+#### ↔ Centering
+To center pictures, put the code inside a `div` with `sx-center` class like this:
+```html
+<div markdown=1 class="sx-center">
+  ![My picture](/assets/example.jpg)
+</div>
+```
+
+### 🔘 Buttons
+Buttons can be inserted with the following syntax. Just replace `theme` with `red`, `green`, `blue`, `orange`, `purple` or `brown`, specify the target link in `href` attribute and the icon in `src` attribute.
+```html
+<div class='sx-button'>
+  <a href='https://your.link.here.example.com/' class='sx-button__content theme'>
+    <img src='/assets/img/icons/example_icon.svg'/>#{text}
+  </a>
+</div>
+```
+
+Markdown attribute can be omitted if you don't use markdown inside the block (e.g. by using the lightbox syntax).
 
 ### ℹ Notes
 [1] Hue can be either one of the predefined colors or any of the CSS `color` attribute supported values (hex, rgb...).
@@ -151,6 +197,17 @@ You can use following predefined colors:
 ```
 These colors are CSS variables, usage: `var(--var-name)`
 
+## Add-ons
+Add-ons are distributed as Jekyll plugins. Just download any desired `.rb` file from the repository `_plugin` folder and put it in your `_plugin` folder.
+
+### Buttons (button.rb)
+Adds a tag to simplify insertion of buttons:
+```
+{% button red|https://www.example.com/|/assets/img/icons/cog.svg %}
+Download binary
+{% endbutton %}
+```
+
 ## 🤝 Contributing
  
 Bug reports and pull requests are welcome on [GitHub](https://github.com/andreondra/jekyll-theme-simplex).
@@ -164,8 +221,12 @@ Your theme is setup just like a normal Jekyll site! To test your theme, run `bun
 When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
 To add a custom directory to your theme-gem, please edit the regexp in `jekyll-theme-simplex.gemspec` accordingly.
 
-## Credit
+## Credits
 Includes icons by [uxwing](https://uxwing.com/).
+
+The lightbox feature is provided by [Lity](https://github.com/jsor/lity) licensed under the [MIT License](https://opensource.org/licenses/MIT).
+
+Uses [jQuery](https://github.com/jquery/jquery) JavaScript plugin licensed under the [MIT License](https://opensource.org/licenses/MIT).
 
 ## ⚖ License
 © Ondrej Golasowski. The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).

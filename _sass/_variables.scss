@@ -74,6 +74,8 @@
 
     --c-tableBorder: var(--c-themePrimaryDark);
 
+    --c-subtitle: var(--c-themeTerniaryDark);
+
     //Syntax highlighting.
     .highlight .hll { background-color: #ffffcc }
     .highlight .c { color: #8f5902; font-style: italic } /* Comment */
@@ -189,6 +191,8 @@
         --c-noCategoryText: var(--c-themePrimaryDark);
 
         --c-tableBorder: var(--c-themePrimaryLight);
+
+        --c-subtitle: var(--c-themeTerniaryLight);
 
         //Syntax highlighting.
         .highlight pre { background-color: #272822; }
