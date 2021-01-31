@@ -6,6 +6,7 @@
 
 A *simple* yet neat blogging theme. Developed for the [golas blog](https://golas.blog/) project.
 
+
 ## 👓 Preview
 ![Preview](preview.gif)
 
