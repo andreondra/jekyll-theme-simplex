@@ -2,10 +2,10 @@
     <section class="logo">
         <a href="{{ site.url }}/" class="logo__link">
             {% if site.logo_img != nil %}
-                <h1 style="display: none;">golasblog</h1>
+                <h1 style="display: none;">{{ site.title }}</h1>
                 <img class="logo__link__img" src={{site.logo_img}}/>
             {% else %}
-                <h1>golasblog</h1>
+                <h1>{{ site.title }}</h1>
             {% endif %}
         </a>
     </section>

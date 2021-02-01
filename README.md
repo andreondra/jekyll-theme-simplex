@@ -48,12 +48,9 @@ Or install it yourself as:
 ## ✔ Usage
 
 ### ⚙ Setting up the template
-Replace the contents of the _config.yml file with the following:
+Add following to the `_config.yml`:
 ```yaml
-title: the Simplex theme #The name of your blog.
 logo_img: /assets/img/icons/golasblog_logo.svg #Absolute path to the logo. If not specified, the title will be displayed instead.
-description: description #Description.
-global_tags: jekyll theme simplex golasblog responsive html5 #Tags.
 copyright: © Golasowski 2020 #Your copyright.
 
 collections:
@@ -101,14 +98,14 @@ Create a `_data` folder in the root directory. In the folder, create a `nav.yaml
   hue: "var(--c-themeHueRed)" #Menu item hue - see note [1].
   subnav: #Subnav. See note [2].
       - title: C++ #Submenu item title.
-        url: cpp.html #Submenu item url.
+        url: category/cpp.html #Submenu item url.
         hue: "var(--c-themeHueOrange)" #Submenu item hue.
         subnav: #Another subnav
             - title: Libraries
               url: libs.html
               hue: "var(--c-themeHueBlue)"
 - title: Design
-  url: design.html
+  url: category/design.html
   icon: assets/img/icons/design.svg
   hue: "var(--c-themeHueRed)"
 ```
