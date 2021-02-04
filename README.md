@@ -1,5 +1,3 @@
-⚠ WORK IN PROGRESS - DO NOT USE IN PRODUCTION ⚠
-
 [![Demo](https://img.shields.io/badge/demo-golasblog-blue?style=flat-square)](https://golas.blog/)
 
 # <img src="assets/img/icons/simplex_logo.svg" alt="Simplex" height="50"/>
