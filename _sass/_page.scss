@@ -7,7 +7,7 @@
 
     color: var(--c-pageText);
     justify-self: center;
-    padding: 0 1rem;
+    margin: 0 2rem;
     max-width: 1000px;
     @include flexbox{
         flex-direction: column;
