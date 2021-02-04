@@ -23,7 +23,7 @@
 {% if page.og_description != nil %}
     <meta property="og:description" content="{{ page.og_description }}" />
 {% endif %}
-<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<meta property="og:url" content="{{ site.url }}/{{ page.url }}" />
 {% if page.og_type != nil %}
     <meta property="og:type" content="{{ page.og_type }}" />
 {% else %}
