@@ -30,8 +30,13 @@
     <meta property="og:type" content="article" />
 {% endif %}
 {% if page.og_image != nil %}
-<meta property="og:image" content="{{ site.url }}/{{ page.og_image }}" />
-<meta property="og:image:secure_url" content="{{ site.url }}/{{ page.og_image }}" />
+    <meta property="og:image" content="{{ site.url }}/{{ page.og_image }}" />
+    <meta property="og:image:secure_url" content="{{ site.url }}/{{ page.og_image }}" />
+{% endif %}
+{% if page.fb_app_id != nil %}
+    <meta property="fb:app_id" content="{{ page.fb_app_id }}" />
+{% else if site.fb_app_id != nil %}
+    <meta property="fb:app_id" content="{{ site.fb_app_id }}" />
 {% endif %}
 
 
