@@ -21,6 +21,8 @@ A *simple* yet neat blogging theme. Developed for the [golas blog](https://golas
 ### Lity Lightbox 
 Supports images, videos, iFrames and more. See below for syntax.
 
+### Open Graph tags
+
 ## ℹ Installation
 
 Add this line to your Jekyll site's `Gemfile`:
@@ -118,6 +120,9 @@ layout: post #Do not change.
 category: [programming, testing] #One, more categories or no at all.
 title: "Lorem ipsum" #Article title.
 author: andy #Author's nick.
+nextPart: _posts/2021-01-30-example.md #Next part.
+prevPart: _posts/2021-01-30-example.md #Previous part.
+og_image: assets/example.png #Open Graph preview image.
 ---
 Your markdown content here.
 ```
