@@ -30,8 +30,8 @@
     <meta property="og:type" content="article" />
 {% endif %}
 {% if page.og_image != nil %}
-<meta property="og:image" content="{{ page.og_image }}" />
-<meta property="og:image:secure_url" content="{{ page.og_image }}" />
+<meta property="og:image" content="{{ site.url }}/{{ page.og_image }}" />
+<meta property="og:image:secure_url" content="{{ site.url }}/{{ page.og_image }}" />
 {% endif %}
 
 
