@@ -18,7 +18,7 @@
         <section class="snippet__data__metadata">
             <section class="snippet__data__metadata__category">
                 {% for category in post.category %}
-                    <p class="snippet__data__metadata__category__title" style="background: {{ site.category | where: "category", category | map: "hue"}}">{{ category }}</p>
+                    <p class="snippet__data__metadata__category__title" style="background: {{ site.category | where: "category", category | map: "hue"}}">{{ site.category | where: "category", category | map: "title"}}</p>
                 {% else %}
                     <p class="snippet__data__metadata__category__title">No category</p>
                 {% endfor %}
