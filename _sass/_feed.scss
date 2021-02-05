@@ -40,7 +40,7 @@
 
         @include flexbox;
         position: relative;
-        min-width: 80%;
+        width: 100%;
         
         &__link{
             text-decoration: none;
