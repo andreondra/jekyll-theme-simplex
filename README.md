@@ -1,4 +1,7 @@
-[![Demo](https://img.shields.io/badge/demo-golasblog-blue?style=flat-square)](https://golas.blog/)
+[![Blog Demo](https://img.shields.io/badge/demo-golasblog-blue?style=flat-square)](https://golas.blog/)
+[![Generic Demo](https://img.shields.io/badge/demo-generic-green?style=flat-square)](https://simplex-demo.golas.systems/)
+
+The source of the generic demo is available here: https://github.com/andreondra/simplex-demo
 
 # <img src="assets/img/icons/simplex_logo.svg" alt="Simplex" height="50"/>
 
