@@ -3,11 +3,13 @@
 // =============================
 // Used for single post view.
 
+$postMaxWidth: 1000px;
+
 .post{
 
     justify-self: center;
     margin: 0 2rem;
-    max-width: 1000px;
+    max-width: $postMaxWidth;
     @include flexbox{
         flex-direction: column;
         justify-content: flex-start;
@@ -133,6 +135,21 @@
                     height: 1em;
                 }
             }
+        }
+    }
+}
+
+// Enable text wrapping on mobile
+@media screen and (max-width: $postMaxWidth){
+    .post{
+        max-width: calc(100% - 2rem);
+
+        &__content{
+            max-width: 100%;
+        }
+        
+        &__content p{
+               overflow-wrap: break-word;
         }
     }
 }
